@@ -1,0 +1,127 @@
+/*
+* 16. Buttons
+* ====================
+*/
+
+// Button General Styles
+.btn {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  max-width: 100%;
+  border-style: solid;
+  text-overflow: ellipsis;
+  border-radius: 0px;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  .icon{
+    float: left;
+    vertical-align: middle;
+  }
+}
+
+// Button Layout Styles
+
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 16px;
+}
+
+.btn-md {
+  padding: 11px 35px;
+  font-size: 16px;
+}
+.btn-lg{
+  padding: 12px 23px;
+  font-size: 16px;
+}
+
+// Button Appearance Styles
+.btn-primary {
+  color: $white;
+  border: none;
+  font-family: $third-font-family;
+  background: $brand-primary;
+ 
+  &:focus{ 
+    color: $white; 
+    outline: none; 
+    background: $brand-primary;
+  }
+ 
+  &:active{
+    color: $white;
+    background: $brand-primary;
+    box-shadow: none;
+   
+    &:focus{ background: $brand-primary; outline: none; }
+  }
+
+  &:hover{ 
+    color: #fff;
+    background: #387047;
+  }
+}
+.btn-primary-1{
+  @extend .btn-primary;
+  background: #6E9AA4;
+  &:hover{ background: #3b747e; }
+}
+.btn-primary-2{
+  @extend .btn-primary;
+  background: #DA796C;
+  &:hover{ background: #c74432; }
+}
+.btn-primary-3{
+  @extend .btn-primary;
+  background: #DAA36C;
+  &:hover{ background: #B1763C; }
+}
+
+
+
+.btn-default {
+  color: $brand-primary;
+  font-weight: 500;
+  background-color: #F9F9F9;
+  border: none;
+
+  &:hover{ 
+    background-color: #81C293; 
+    color: #fff; 
+  }
+
+  &:focus:active{ border: none; }
+
+  &:active, &:focus{
+    color: #fff;
+    background: #81C293;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+ 
+  &:active:focus{ color: $white; 
+    background: #81C293; 
+    outline: none; 
+    border: none;
+  }
+}
+
+.form .btn-submit{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px 12px;
+  border-radius: 0;
+}
+

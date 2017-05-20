@@ -1,0 +1,60 @@
+/*
+* 20. Thumbnails
+* ====================
+*/
+
+.img-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+
+  > img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    min-width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .img-bar {
+    color: $brand-primary;
+    background: rgba(0, 0, 0, .2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .5;
+    text-align: center;
+    transition: .3s all ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{ 
+      transition: .3s all ease-out;
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    img{
+      -webkit-filter: none;
+      -moz-filter: none;
+      -ms-filter: none;
+      -o-filter: none;
+      filter: none;
+    }
+    .img-bar { 
+      opacity: 1; 
+      img{ opacity: 1; }
+    }
+  }
+}

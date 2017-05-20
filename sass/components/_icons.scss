@@ -1,0 +1,27 @@
+/*
+* 17. Icons
+* ====================
+*/
+
+// Icon General Styles
+.icon {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+// Icon Sizing Styles
+.icon-xs{
+  font-size: 14px;
+}
+
+.icon-lg {
+  font-size: 42px;
+}
+
+.icon-xl{
+  font-size: 44px
+}
+

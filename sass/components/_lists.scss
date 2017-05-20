@@ -1,0 +1,190 @@
+/*
+* 19. Lists
+* ====================
+*/
+
+.list{
+ 
+}
+
+.list-4{
+  > li + li{ margin-top: 4px; }
+}
+
+.list-styled > li a{
+  position: relative;
+  
+  &:before{
+    content: '•';
+    color: $brand-primary;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: -13px;
+    transition: .4s all ease;
+  }
+  
+  &:hover{
+    &:before{ color: #fff; }
+  }
+}
+
+// List inline
+//
+.list-inline-13 {
+  > li {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @media(min-width: $screen-xs-min){
+      padding-left: 13px; 
+      padding-right: 13px; 
+    }
+    
+    @media(min-width: $screen-md-min){
+      padding: 0;
+    }
+    
+    @media(min-width: $screen-lg-min){
+      padding-left: 13px; 
+      padding-right: 13px;
+    }
+  }
+}
+
+ul.list-inline-13 li:first-child{ padding-left: 0; }
+
+/*
+* @subsection   Marked List
+*/
+
+.marked-list {
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 20px;
+
+  > li {
+    position: relative;
+    padding-left: 35px;
+
+    &:before {
+      content: "\f00c";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 400;
+      font-size: 1.3em;
+      font-family: $fa;
+      color: $brand-primary;
+    }
+
+    & + li { margin-top: 10px; }
+
+    > a:hover { color: $brand-primary; }
+  }
+}
+
+// Index List
+//
+.marked{
+  padding-left: 0;
+  
+  &:before {
+    display: none;
+    content: "\f00c";
+    position: absolute;
+    left: 14px;
+    top: 0;
+    font-size: 1em;
+    font-family: $fa;
+    color: $brand-primary;
+  }
+}
+
+.index-list {
+  margin-top: 40px;
+  counter-reset: li;
+  
+  li + li{ 
+    margin-top: 50px; 
+    
+    @media(min-width: 992px){
+      margin-top: 87px;
+    }
+  }
+
+  > li {
+    > .index-list-counter{
+      position: relative;
+      
+      * + p{ margin-top: 18px; }
+     
+      &:before {
+        display: none;
+        content: counter(li);
+        counter-increment: li;
+        color: $brand-primary;
+        opacity: 0.1;
+        position: absolute;
+        top: -38px;
+        right: 300px;
+        font-size: 200px;
+        font-weight: 900;
+        font-family: $secondary-font-family;
+        line-height: 1;
+      }
+    }
+  }
+  > li:nth-child(2) {
+    > .index-list-counter:before {
+      top: -33px;
+      left: 335px;
+    }
+  }
+  > li:nth-child(3) {
+    > .index-list-counter:before {
+      top: -8px;
+      right: 270px;
+    }
+  }
+
+  @media(min-width: 992px){
+    margin-top: 83px;
+  }
+}
+
+@media(min-width: $screen-md-min){
+  .index-list {
+    > li img{ margin-bottom: 0; } 
+    
+    > li > .index-list-counter:before { display: block; }
+  }
+  li:nth-child(2){
+    img{ transform: translateX(0); }
+  }
+  .marked{ 
+    padding-left: 36px; 
+    
+    &:before{ display: block; }
+  }
+}
+@media(min-width: $screen-lg-min){
+  .index-list{
+    > li:nth-child(1) {
+      > .index-list-counter:before {
+          right: 413px;
+      }
+    }
+    > li:nth-child(2) {
+      > .index-list-counter:before {
+          left: 430px;
+      }
+    }
+    > li:nth-child(3) {
+      > .index-list-counter:before {
+          right: 380px;
+      }
+    }
+  }
+}

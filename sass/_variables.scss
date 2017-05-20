@@ -1,0 +1,77 @@
+//========================================================
+//                     Variables
+//=========================================================
+
+//== Layout settings
+$layout-boxed-width: 1200px;
+$layout-boxed-bg: #444;
+
+
+//== Bootstrap resolutions
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xl-min: 1800px;
+
+
+//== Flex Grid system
+//
+//## Define your custom flex responsive grid.
+
+$container-width: 300px;
+$container-xs-width: 480px;
+$container-sm-width: 750px;
+$container-md-width: 970px;
+$container-lg-width: 1200px;
+$container-xl-width: 1800px;
+
+$row-ws: 25px;
+$row-ws-sm: 30px;
+$row-ws-lg: 90px;
+
+$col-count: 12;
+$col-spacing: 30px;
+
+
+//== Fonts
+$default-font-family: 'Raleway', sans-serif!important;
+$secondary-font-family: 'Lora', sans-serif!important;
+$third-font-family: 'Dosis', sans-serif!important;
+$fa: "FontAwesome";
+
+$default-font-weight: 400;
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:               #000;
+$gray-darker:             #222;
+$gray-dark:               #333;
+$gray:                    #555;
+$gray-light:              #999;
+$gray-lighter:            #B2B2B2;
+$gray-soft:				  #DDD;
+$gray-color:			  #464E52;
+
+$brand-primary:           #51A367; 
+$brand-success:           #5cb85c;
+$brand-info:              #5bc0de;
+$brand-warning:           #f0ad4e;
+$brand-danger:            #d9534f;
+
+
+
+$white: #fff;
+$bg-grey: #F7F7F7;
+$bg-dark: #2A5440;
+//== Anchor Colors
+$default: #000;
+
+$content-color: #333333;
+$content-bg: $white;
+
+
+

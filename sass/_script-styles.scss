@@ -1,0 +1,121 @@
+/*
+* 21. Script styles
+* ========================================
+*/
+
+@import "extensions/animate";
+@import "extensions/building-map";
+@import "extensions/counter";
+@import "extensions/countdown";
+@import "extensions/magnific-popup";
+@import "extensions/owl-carousel";
+@import "extensions/navigation";
+@import "extensions/tabs";
+@import "extensions/toTop";
+@import "extensions/charts";
+@import "extensions/canvas-caption";
+
+
+
+/*
+* Js form
+* ====================
+*/
+
+.js-form{
+  input{
+    &:required{
+      &:valid{
+        border-color: #1FB51D;
+      }
+    }
+
+    &:-webkit-autofill{
+      background-color: red !important;
+      color: red !important;
+    }
+  }
+}
+
+.js-result{
+  position: fixed;
+  bottom: -100px;
+  padding: 8px 20px;
+  color: #fff;
+  background-color: gray;
+  transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  box-shadow: 1px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  z-index: 1200;
+
+  &.success,
+  &.error{
+    bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.success{
+    background-color: #1FB51D;
+  }
+  &.error{
+    background-color: #EC6F28;
+  }
+}
+
+
+/*
+* Map
+* ==============
+*/
+
+.map {
+  width: 100%; 
+  height: 300px;
+  margin-top: 100px;
+  position: relative;
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(bottom, #fff 30%, transparent 100%);
+    background: -moz-linear-gradient(bottom, #fff 30%, transparent 100%);
+    background: -ms-linear-gradient(bottom, #fff 30%, transparent 100%);
+    background: -o-linear-gradient(bottom, #fff 30%, transparent 100%);
+    background: linear-gradient(bottom, #fff 30%, transparent 100%);
+    pointer-events: none;
+  }
+  
+  @media(min-width: 992px){
+    height: 100%;
+    margin-top: 0;
+  }
+}
+.map-caption{
+  font-family: $default-font-family;
+  position: absolute;
+  bottom: 31px;
+  left: 50%;
+  transform: translateX(-50%);
+  h5{
+    font-family: $default-font-family;
+    font-weight: 600;  
+    color: $brand-primary;
+  }
+}
+
+/*
+* Popover
+* ==============
+*/
+
+.popover{
+  width: 200px;
+  top: -71px!important;
+}

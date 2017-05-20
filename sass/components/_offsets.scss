@@ -1,0 +1,39 @@
+/*
+* 6. Offsets
+* ====================
+*/
+$medias: (0: null, $screen-xs-min : xs, $screen-sm-min : sm, $screen-md-min : md, $screen-lg-min : lg, $screen-xl-min : xl);
+
+// Paddings
+// -------------------------
+
+$paddings: (0, 30px, 50px, 60px, 80px, 90px, 120px, 150px);
+
+@include indent-responsive(p, (padding-top, padding-bottom), $medias, $paddings);
+@include indent-responsive(pt, padding-top, $medias, $paddings);
+@include indent-responsive(pb, padding-bottom, $medias, $paddings);
+@include indent-responsive(pl, padding-left, $medias, $paddings);
+@include indent-responsive(pr, padding-right, $medias, $paddings);
+
+
+// Elements
+// -------------------------
+.p-zero{ padding: 0; }
+
+h4 + p{ 
+	margin-top: 20px; 
+	@media(min-width: 992px){ margin-top: 22px; }
+}
+
+p + .btn{ margin-top: 27px; }
+
+// Responsive
+// -------------------------
+
+$margins: (0, 10px, 20px, 30px, 40px, 50px, 60px, 70px, 175px);
+
+html, html .global-wrapper{
+  @include indent-responsive(m, (margin-top, margin-bottom), $medias, $margins);
+  @include indent-responsive(mt, margin-top, $medias, $margins);
+  @include indent-responsive(ml, margin-left, $medias, $margins);
+}

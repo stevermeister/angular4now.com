@@ -1,0 +1,28 @@
+// Custom Mixins
+// --------------------------------------------------
+
+
+// Utilities
+@import "mixins/helpers";
+@import "mixins/vendors-prefix";
+@import "mixins/flex";
+@import "mixins/text-utilities";
+@import "mixins/pull-mixins";
+@import "mixins/show-hide";
+@import "mixins/responsive-generator";
+@import "mixins/media-mixin";
+@import "mixins/group";
+
+// Grid Framework
+@import "mixins/custom-grid";
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

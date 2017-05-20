@@ -1,0 +1,87 @@
+/*
+* 18. Pricing Box
+* ====================
+*/
+
+.pricing-box-item{
+  background: #fff;
+  z-index: 5;
+
+  img{ width: 100%; }
+} 
+.pricing-box-body{ 
+  color: #222;
+  padding: 20px 15px 20px 19px;
+
+  #{headings()}{ color: #222; }
+
+  .btn{ font-weight: 500; }
+
+  .btn-sm{ padding: 6px 20px; }
+  p{ font-size: 14px; }
+  
+  * + .btn{ margin-top: 16px; }
+  * + p{ margin-top: 15px; }
+}
+
+.pricing-box-left{
+  padding: 0;
+
+  @media(min-width: 480px){
+    padding: 0 40px;
+  }
+
+  @media(min-width: 768px){
+    padding: 0;
+  }
+
+  @media(min-width: 1800px){
+    padding-right: 50px;
+  }
+
+  .pricing-box-item{
+    border-top: 3px solid #51A367;
+    border-right: 3px solid #51A367;
+  }
+}
+
+.pricing-box-primary{
+  padding: 0;
+
+  @media(min-width: 480px){
+    padding: 0 40px;
+  }
+
+  @media(min-width: 768px){
+    padding: 0;
+  }
+
+  @media(min-width: 1800px){
+    padding: 0 25px;
+  }
+
+  .pricing-box-item{
+    border-top: 3px solid #56A2B0;
+    border-right: 3px solid #56A2B0;
+  }
+}
+.pricing-box-right{
+  padding: 0;
+
+  @media(min-width: 480px){
+    padding: 0 40px;
+  }
+
+  @media(min-width: 768px){
+    padding: 0;
+  }
+
+  @media(min-width: 1800px){
+    padding-left: 50px;
+  }
+
+  .pricing-box-item{
+    border-top: 3px solid #DA796C;
+    border-right: 3px solid #DA796C;
+  }
+}

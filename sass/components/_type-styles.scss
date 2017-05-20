@@ -1,0 +1,68 @@
+/*
+* 5. Type styles
+* ====================
+*/
+
+#{headings()} {
+  font-family: $secondary-font-family;
+  vertical-align: baseline;
+  display: block;
+  color: $gray-dark;
+  font-weight: 400;
+
+  a:focus, a:hover {
+    color: $brand-primary;
+    text-decoration: none;
+  }
+}
+
+h1, .h1 {
+  font-size: 50px;
+  line-height: 1;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 75px;
+    line-height: 1;
+  }
+}
+
+h2, .h2 {
+  font-size: 38px;
+  line-height: 1;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 45px;
+  }
+}
+
+h3, .h3 {
+  font-size: 30px;
+  line-height: initial;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 40px;
+  }
+}
+
+h4, .h4 {
+  font-size: 20px;
+  line-height: 1;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 25px;
+  }
+}
+
+h5, .h5 {
+  font-size: 18px;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 20px;
+  }
+}
+
+h6, .h6 {
+  font-size: 18px;
+}
+
+

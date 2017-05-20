@@ -1,0 +1,77 @@
+//
+// Bootstrap media upgrade
+// --------------------------------------------------
+
+@mixin make-media($resolution, $gutter) {
+  .media-#{$resolution} {
+    > .media-left img, > .media-right img {
+      max-width: none;
+    }
+
+    > .media-left,
+    > .media-right,
+    > .media-body {
+      display: table-cell!important;
+      vertical-align: middle;
+    }
+    > .media-right {
+      padding-left: 60px;
+      padding-top: 0;
+    }
+    > .media-left {
+      padding-right: $gutter;
+      padding-bottom: 0;
+    }
+
+  }
+
+  .media-#{$resolution}-base {
+    > .media-left img, > .media-right img {
+      max-width: 100%;
+    }
+
+    > .media-left,
+    > .media-right,
+    .media-body {
+      padding: 0;
+      display: block;
+      vert-align: top;
+    }
+    > .media-right {
+      padding-top: $gutter;
+    }
+    > .media-left {
+      padding-bottom: $gutter;
+    }
+
+  }
+
+  .media-#{$resolution}-rtl {
+    direction: rtl;
+
+    > .media-left {
+      padding-right: 0;
+      padding-left: $media-gutter;
+    }
+
+    > .media-right {
+      padding-right: $media-gutter;
+      padding-left: 0;
+    }
+  }
+
+  .media-#{$resolution}-ltr {
+    direction: ltr;
+
+    > .media-left {
+      padding-right: $media-gutter;
+      padding-left: 0;
+    }
+
+    > .media-right {
+      padding-right: 0;
+      padding-left: $media-gutter;
+    }
+  }
+}
+
