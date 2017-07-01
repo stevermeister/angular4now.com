@@ -171,7 +171,7 @@
             </div>
           </div>
 
-          <div class="col-md-5 mt-40 mt-md-0">
+          <!--<div class="col-md-5 mt-40 mt-md-0">
             <div class="contact-form">
               <h3>Contact us</h3>
               <hr class="divider">
@@ -184,14 +184,14 @@
                 <button type="submit" class="btn btn-primary btn-sm btn-submit"><span class="icon icon-xs fa-paper-plane"></span></button>
               </form>
             </div>
-          </div>
+          </div>-->
 
           <div class="col-md-4">
-            <div data-text="Mr John Smith 132, My Street, Bigtown BG23 4YZ England" data-x-coord="53.385873" data-y-coord="-1.471471"
+            <div data-text="Mr John Smith 132, My Street, Bigtown BG23 4YZ England" data-x-coord="38.8807938" data-y-coord="-77.115886399"
               class="map" id="google-map"></div>
             <div class="map-caption">
-              <h5>CEAR Studios</h5>
-              <p>Thomas Nolan Kaszas<br> PSC 450 Box 297<br> APO AP 96206
+              <h5>Angular4Now</h5>
+              <p>Virginia Tech Research Center
               </p>
             </div>
           </div>
@@ -202,10 +202,36 @@
   </section>
 
 
+  <!--============================== disqus ==============================-->
+  <section class="p-30 pt-md-50 pb-md-30 bg-pattern">
+    <div class="container" id="disqus">
+      <h4>Share your thoughts</h4>
+      <div>
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement('script');
+            s.src = 'https://angular4now.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-
-
-
+      </div>
+    </div>
+  </section>
+  <!--============================== disqus ==============================-->
 
 
 
@@ -232,6 +258,9 @@
   <script src="js/building-map.js"></script>
 
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+
+  <script id="dsq-count-scr" src="//angular4now.disqus.com/count.js" async></script>
+
   <script type='text/javascript'>
     (function ($) {
       window.fnames = new Array();
