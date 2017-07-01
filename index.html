@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Site Title -->
-  <title>Home</title>
+  <title>Angular 4 Now </title>
   <meta charset="utf-8">
-  <meta name="format-detection" content="telephone=no"/>
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="img/android-chrome-192x192.png" sizes="192x192">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
   <meta name="msapplication-square70x70logo" content="img/smalltile.png" />
   <meta name="msapplication-square150x150logo" content="img/mediumtile.png" />
   <meta name="msapplication-wide310x150logo" content="img/widetile.png" />
@@ -29,99 +31,238 @@
 
   <!-- Stylesheets -->
   <link href='https://fonts.googleapis.com/css?family=Lora%7CDosis:400,500,600%7CRaleway:400,500' rel='stylesheet' type='text/css'>
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
 
-<!-- The Main Wrapper -->
-<div class="global-wrapper demo-page">
-
-  <!--============================== HEADER ==============================-->
-  <header id="home" class="header">
-    <div class="page-header-00">
-      <div class="container light-section">
-        <h1>Angular4 Master Class</h1>
-        <h5 class="mt-40 text-light">Angular Master Class will help you to master modern framework in short period of time.</h5>
-        <div class="media-group mt-40">
-          <a href="#" class="btn btn-md btn-primary"><span>PURCHASE NOW</span></a>
-          <a data-scroll-to="#demo" href="#" class="btn btn-md btn-default"><span>VIEW DEMOS</span></a>
-          <a href="index-02.html" class="btn btn-md btn-default"><span>Subscribe</span></a>
-        </div>
+  <div id="page-preloader">
+    <div class="contpre">
+      <div class="loader">
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
       </div>
     </div>
-  </header>
+  </div>
 
-  <!--============================== CONTENT ==============================-->
-  <main class="site-container demo">
-    <div id="demo">
-      <div class="bg-soft p-60">
-        <div class="container">
-          <h2 class="text-center">What we can give you</h2>
+  <!-- The Main Wrapper -->
+  <div class="global-wrapper demo-page">
 
-          <div class="row flex-center mt-40">
-
-            <div class="col-md-7 text-lg-right">
-              <img src="img/demo-page-0.jpg" alt="">
-            </div>
-            <div class="col-md-5 text-center text-md-left">
-              <p class="mt-30 mt-md-0">We will provide all the material in 3 sections:</p>
-              <br>
-              <ul class="list-styled ul-lh text-left">
-                <li>Basic knowladge</li>
-                <li>Reactive approach</li>
-                <li>Architecture and optimisation</li>
-              </ul>
-              <p class="mt-30">Main topics are:</p>
-              <ul class="ul-lh text-left">
-                <li>— Component approach</li>
-                <li>— Dependancy injection</li>
-                <li>— Change detection</li>
-                <li>— Form validation</li>
-                <li>— Routing</li>
-                <li>— Authorization</li>
-                <li>— Unit tests</li>
-                <li>— Bundeling</li>
-              </ul>
-            </div>
+    <!--============================== HEADER ==============================-->
+    <header id="home" class="header">
+      <div class="page-header-00">
+        <div class="container light-section">
+          <h1>Angular4 Master Class</h1>
+          <h5 class="mt-40 text-light">Angular Master Class will help you to master modern framework in short period of time.</h5>
+          <div class="media-group mt-40">
+            <!--<a href="#" class="btn btn-md btn-primary"><span>PURCHASE NOW</span></a>-->
+            <!--<a data-scroll-to="#demo" href="#" class="btn btn-md btn-default"><span>VIEW DEMOS</span></a>-->
+            <a data-scroll-to="#subscribe" href="#" class="btn btn-md btn-default"><span>Subscribe</span></a>
           </div>
         </div>
       </div>
+    </header>
+
+    <!--============================== CONTENT ==============================-->
+    <main class="site-container demo">
+      <div id="demo">
+        <div class="bg-soft p-60">
+          <div class="container">
+            <h2 class="text-center">What we can give you</h2>
+
+            <div class="row flex-center mt-40">
+
+              <div class="col-md-7 text-lg-right">
+                <img src="img/demo-page-0.jpg" alt="">
+              </div>
+              <div class="col-md-5 text-center text-md-left">
+                <p class="mt-30 mt-md-0">We will provide all the material in 3 sections:</p>
+                <br>
+                <ul class="list-styled ul-lh text-left">
+                  <li>Basic knowladge</li>
+                  <li>Reactive approach</li>
+                  <li>Architecture and optimisation</li>
+                </ul>
+                <p class="mt-30">Main topics are:</p>
+                <ul class="ul-lh text-left">
+                  <li>— Component approach</li>
+                  <li>— Dependancy injection</li>
+                  <li>— Change detection</li>
+                  <li>— Form validation</li>
+                  <li>— Routing</li>
+                  <li>— Authorization</li>
+                  <li>— Unit tests</li>
+                  <li>— Bundeling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
       </div>
-    </div>
+  </div>
 
   </main>
+
+  <section class="p-30 pt-md-50 pb-md-30 bg-pattern">
+    <div class="container" id="subscribe">
+      <h4>Subscribe to our newsfeed to always be in touch</h4>
+      <div class="subscription-form mt-20 mt-sm-30 row row-no-gutter flex-center">
+        <form name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" action="//stepansuvorov.us14.list-manage.com/subscribe/post?u=c5c51879050c947e83ef00f6b&amp;id=e3f628ced0"
+          class="col-sm-8 col-md-4 form js-form" method="POST">
+          <div class="form-group">
+            <input required type="email" name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="Email">
+          </div>
+          <button type="submit" class="btn btn-primary btn-sm btn-submit" id="mc-embedded-subscribe"><span class="icon icon-xs fa-paper-plane"></span></button>
+          <label for="se-email" class="js-result"></label>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c5c51879050c947e83ef00f6b_e3f628ced0" tabindex="-1" value=""></div>
+        </form>
+        <div class="col-md-2 mt-20 mt-md-0">
+          <div class="subscribe-counter">Subscribers:<span class="sub-count">1529</span></div>
+          <div class="text-right mailchimp-logo hide show-md-block"><img src="img/mailchimp.png" width="99" height="22" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section data-nav="contacts" class="parallax-bg" data-parallax="scroll" data-speed="0.4" data-image-src="img/index-18.jpg">
+    <div class="contact-data">
+      <div class="container">
+        <div class="row flex-center">
+
+          <div class="col-md-3 text-md-left">
+            <div class="contact-links">
+              <h4 class="third-font">Contact info:</h4>
+              <address>
+                <div class="h6">
+                  <p><span class="icon icon-xs fa-phone"></span><span>Phones</span></p>
+                </div>
+                <p>202-468-1822</p>
+              </address>
+              <address>
+                <div class="h6">
+                  <p><span class="icon icon-xs fa-envelope"></span><span>Email</span></p>
+                </div>
+                <p><a href="mailto:info@angular4now.com">info@angular4now.com</a></p>
+              </address>
+              <ul>
+                <li>
+                  <span class="icon icon-xs fa-facebook-square"></span>
+                  <a href="https://www.facebook.com/angular4now/">Facebook.com</a>
+                </li>
+                <li>
+                  <span class="icon icon-xs fa-twitter"></span>
+                  <a href="https://twitter.com/angular4now">Twitter.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-5 mt-40 mt-md-0">
+            <div class="contact-form">
+              <h3>Contact us</h3>
+              <hr class="divider">
+              <form class="js-form" method="POST" action="php/contact.php">
+                <div class="form-group">
+                  <div class="input-block"><input autocomplete="off" required type="text" name="name" class="form-control" placeholder="Name"></div>
+                  <div class="input-block"><input autocomplete="off" required type="email" name="email" class="form-control" placeholder="Email"></div>
+                  <div class="input-block"><textarea required name="message" class="form-control" placeholder="Message"></textarea></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm btn-submit"><span class="icon icon-xs fa-paper-plane"></span></button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div data-text="Mr John Smith 132, My Street, Bigtown BG23 4YZ England" data-x-coord="53.385873" data-y-coord="-1.471471"
+              class="map" id="google-map"></div>
+            <div class="map-caption">
+              <h5>CEAR Studios</h5>
+              <p>Thomas Nolan Kaszas<br> PSC 450 Box 297<br> APO AP 96206
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
 
   <!--============================== FOOTER ==============================-->
   <footer id="footer" class="text-center global-footer">
     <div class="container">
       <div class="row flex-center">
         <div class="col-md-8">
-          <a href="#" class="btn btn-md btn-primary">PURCHASE NOW</a>
-          <p class="text-grey">Copyright © 2016. ALL RIGHTS RESERVED</p>
+          <p class="text-grey">Copyright © 2017. ALL RIGHTS RESERVED</p>
         </div>
       </div>
     </div>
   </footer>
-</div>
+  </div>
 
-<!-- Core Scripts -->
-<script src="js/minified.js"></script>
+  <!-- Core Scripts -->
+  <script src="js/minified.js"></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <!-- Additional Functionality Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/building-map.js"></script>
 
-  ga('create', 'UA-12112718-13', 'auto');
-  ga('send', 'pageview');
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script type='text/javascript'>
+    (function ($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = 'EMAIL';
+      ftypes[0] = 'email';
+      fnames[1] = 'FNAME';
+      ftypes[1] = 'text';
+      fnames[2] = 'LNAME';
+      ftypes[2] = 'text';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
 
-</script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-12112718-13', 'auto');
+    ga('send', 'pageview');
+  </script>
 
 </body>
+
 </html>
