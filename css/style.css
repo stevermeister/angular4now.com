@@ -13,7 +13,7 @@
 * 9. Text style
 * 10. Blocks visibility
 * 11. Media
-* 12. 
+* 12.
 * 13. Color
 * 14. Backgrounds
 * 15. Font Awesome
@@ -4724,6 +4724,10 @@ html body .big {
   color: #fff;
 }
 
+.light-section.container {
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
 /*
 * Components
 * ========================================
@@ -8698,8 +8702,8 @@ html:not(.lt-ie10) .not-animated {
   animation-name: slideInLeft;
 }
 
-/* 
-Preloader Animation 
+/*
+Preloader Animation
 */
 @-webkit-keyframes sk-cubemove {
   25% {
@@ -10612,7 +10616,7 @@ img.mfp-img {
   animation-name: fadeIn;
 }
 
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
@@ -10623,7 +10627,7 @@ img.mfp-img {
   transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -12509,7 +12513,7 @@ label:hover input[type="radio"] + span {
 }
 
 .page-header-00 {
-  background: url(../img/index-demo.jpg) top center no-repeat;
+  background: url(../img/master/screen.jpg) top center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;

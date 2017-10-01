@@ -1,6 +1,6 @@
 
 .page-header-00{
-  background: url(../img/index-demo.jpg) top center no-repeat;
+  background: url(../img/master/audience.jpg) top center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@
 
   .ul-lh{ line-height: 32px; }
   .bg-soft{
-      background: #F6F8F7; 
+      background: #F6F8F7;
   }
 
   .pic-heading-1{
@@ -103,7 +103,7 @@
       filter: blur(1px);
     }
     .img-bar{
-      opacity: 1; 
+      opacity: 1;
       > * {
         -webkit-transform: translateY(0px);
       transform: translateY(0px);
@@ -118,13 +118,13 @@
     height: 100%;
     z-index: 5;
   }
-  
+
   .list-styled {
     margin-left: 14px;
 
     > li {
       position: relative;
-      
+
       &:before{
         content: '•';
         color: $brand-primary;
